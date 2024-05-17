@@ -1,0 +1,44 @@
+.modal-root {
+  font-size: 14px;
+  box-sizing: border-box;
+  .modal-wrap {
+    position: fixed;
+    top: 0;
+    inset-inline-end: 0;
+    bottom: 0;
+    inset-inline-start: 0;
+    overflow: auto;
+    outline: 0;
+    -webkit-overflow-scrolling: touch;
+    .modal {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .modal-content {
+        min-width: 428px;
+        min-height: 248px;
+        height: 80vh;
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 6px 24px;
+        .modal-title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .title {
+            font-weight: 600;
+            font-size: 18px;
+          }
+          .close {
+            cursor: pointer;
+          }
+        }
+        .modal-body {
+          padding: 4px 0;
+        }
+      }
+    }
+  }
+}

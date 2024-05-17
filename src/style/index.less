@@ -1,0 +1,76 @@
+@import "./reset.less";
+@import "./modal.less";
+.warp {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .box {
+    display: flex;
+    justify-content: center;
+    .tetris-box {
+      border-spacing: 0;
+      border: 1px solid #e8e8e8;
+      background-color: #252525;
+      .cell {
+        display: flex;
+        .block {
+          flex: 1;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          border: 1px solid #e8e8e8;
+          &.show {
+            background: red;
+          }
+        }
+      }
+    }
+    .box-right {
+      width: 300px;
+      padding: 0 24px;
+      .mark {
+        height: 36px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        .title {
+          color: #fff;
+          font-weight: 600;
+        }
+        .content {
+          color: #fff;
+        }
+      }
+
+      .btn {
+        padding: 4px;
+        color: #fff;
+        background-color: #1677ff;
+        box-shadow: 0 2px 0 rgba(5, 145, 255, 0.1);
+        font-size: 14px;
+        height: 32px;
+        padding: 4px 15px;
+        border-radius: 6px;
+        outline: none;
+        position: relative;
+        display: inline-block;
+        font-weight: 400;
+        white-space: nowrap;
+        text-align: center;
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+        user-select: none;
+        touch-action: manipulation;
+        line-height: 1.5;
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+          background-color: #4096ff;
+        }
+      }
+    }
+  }
+}
